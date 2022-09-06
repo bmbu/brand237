@@ -1,0 +1,316 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --primarColor:#022657;
+    --secondaryColor:#f2aa55;
+    --buttonColor: linear-gradient(#f7a644, #ac7532);
+}
+body{
+    background-color: #0b146d;
+    color: white;
+    font-family:'Poppins', sans-serif;
+}
+.main-header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* position: fixed; */
+    min-width: 100vw;
+    width: 100%;
+    height: 60px;
+    left: 0;
+    top: 0;
+    z-index: 999;
+    transition: all 2s linear;
+    /* background: var(--primarColor); */
+}
+.logo{
+    background: var(--primarColor);
+    width: 20%;
+    height: 100%;
+    float: left;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+    /* transition: all 2s 2s; */
+}
+.logo img{
+    max-height: 80%;
+    float: right;
+    position: relative;
+    top: 4%;
+    right: 4%;
+    /* transition: all 2s 2s; */
+
+}
+.navbar {
+    background: var(--primarColor);
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+    height: 100%;
+    /* transition: all 2s 2s; */
+}
+    
+.navbar ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    margin: 0 12rem 0 1rem;
+    display:flex;
+    align-items: center;
+    height: 100%;
+    /* transition: all 2s linear; */
+}
+
+.navbar li a {
+    color: var(--secondaryColor);
+    text-align: center;
+    padding: 1.4rem 16px;
+    text-decoration: none;
+    /* transition: all 2s ease; */
+}
+
+/* Who we are */
+section{
+    padding: 0 10vw;
+  }
+  h1 {
+    text-align: center;
+    margin: 4vh;
+    color: hsl(31deg 62% 61%);
+    font-size: 35px;
+  }
+  .image-list {
+   display: flex;
+   justify-content: space-between;
+  }
+  .image-list img{
+    border: 1px solid coral;
+    border-radius: 40px;
+    position: relative;
+  }
+  #img1{
+    height: 80px;
+    width: 80px;
+    background: url(./images/pst-yemi.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* background-position: 0 0px; */
+    background-position: top;
+    border: 1px solid coral;
+    border-radius: 50px;
+    position: relative;
+    bottom: -9vh;
+    right: 2.5vw;
+  
+  }
+  #img2{
+    height: 80px;
+    width: 80px;
+    background: url(./images/penn1.jpg);
+    background-size: 250%;
+    background-repeat: no-repeat;
+    background-position: -80px 0px;
+    border: 1px solid coral;
+    border-radius: 50px;
+    position: relative;
+    bottom: -5vh;
+    right: 14vw;
+  }
+  #img3{
+    height: 80px;
+    width: 80px;
+    background: url(./images/alain.jpg);
+    /* background-size: 250%; */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    /* background-position: -80px 0px; */
+    border: 1px solid coral;
+    border-radius: 50px;
+    position: relative;
+    bottom: 7vh;
+    left:4vw;
+  
+  
+  }
+  #img4{
+    height: 80px;
+    width: 80px;
+    background: url(./images/peen-and-alain.jpg);
+    /* background-size: 250%; */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    /* background-position: -80px 0px; */
+    border: 1px solid coral;
+    border-radius: 50px;
+    position: relative;
+    bottom: 9vh;
+  
+  }
+  .container {
+    background-color: hsl(0deg 0% 89%);
+    color: black;
+    /* box-sizing: border-box; */
+    /* align-items: center;
+    justify-content: center; */
+    border-radius: 4rem;
+    padding:2rem;
+  
+  }
+  .partone {
+    background-color: white;
+    text-align: center;
+    border-radius: 4rem;
+    font-size: medium;
+    padding:2rem 2rem;
+  }
+.mission_head{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.mission_head .main_mission{
+    flex: 40%;
+}
+.main_mission{
+    margin: 10px;
+} 
+.mission{
+    background-color: #e3e3e3;
+    color: black;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+.textMission{
+    background-color: #e3e3e3;
+    color: black;
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+/* Team Members */
+.section2{
+    margin: 40px 0;
+}
+.section2 h1{
+    margin-bottom: 30px;
+}
+.team{
+    display: flex;
+    flex-wrap: wrap;
+}
+.team .sub_team{
+    flex: 40%;
+} 
+.main_team{
+    display: flex;
+    flex-wrap: wrap;
+}
+.main_team .flex_team{
+    flex: 25%;
+}
+.team_img{
+    background-image: url(./images/penn1.jpg);
+    background-size: 250%;
+    background-repeat: no-repeat;
+    background-position: 70% 6%;
+    height: 180px;
+    width: 180px;
+    border: 1px solid white;
+    border-radius: 90px;
+    /* float: right; */
+    position: relative;
+    left: 15%;
+}
+
+/* .team_head{
+    margin: 0 10px;
+} */
+.team_head{
+    position: relative;
+    top: 1.5rem;
+}
+.team_name{
+    background-color: #e3e3e3;
+    color: black;
+    text-align: center;
+    padding: 30px 0;
+    margin: 20px 0;
+    border-radius: 10px;
+}
+.team_text{
+    background-color: #e3e3e3;
+    color: black;
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+/* /* footer */
+.row1 {
+  display: inline-block;
+  /* justify-items: center; */
+
+}
+.column2 {
+  display: flex;
+  /* flex-wrap: wrap; */
+  justify-content: space-between;
+  padding: 30px 16px;
+  margin: 8px 5.5px;
+}
+.contact ul{
+  list-style: none;
+  margin: 0 1rem;
+  font-size: small;
+}
+.customer ul{
+  list-style: none;
+  margin: 0 1rem;
+  font-size: small;
+}
+.information ul{
+  list-style: none;
+  margin: 0 1rem;
+  font-size: small;
+  
+}
+.subscribe ul{
+  list-style: none;
+  margin: 0 1rem;
+  font-size: small;
+}
+.copy ul{
+  list-style: none;
+  position: relative;
+  top: 18vh;
+  left: 2vw;
+  font-size: small;
+}
+.fot {
+  background-color: hsl(227deg 100% 17%);
+}
+#bottom {
+  background-color: hsl(227deg 100% 17%);
+  color: white;
+  height: 4vh;
+  border-color: white;
+  margin: right  0.5em;
+}
+#bott {
+  border-radius: 3px;
+  height: 4vh;
+  font-size: small;
+  margin-left: 1 5px;
+  border: none;
+  width: 85px;
+  left: 2vw;
+}
